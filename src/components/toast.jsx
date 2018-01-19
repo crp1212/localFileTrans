@@ -8,7 +8,9 @@ class Toast extends Component {
     }
     render () {
         return (
-
+            <div>
+                
+            </div>
         )
     }
 }

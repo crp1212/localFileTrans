@@ -52,12 +52,10 @@ class Ws extends Lib{
             cb()
             this.eventObj[uuid] = null
         }]
-        console.log(this.eventObj)
     }
 
     emit (type, str) {
         var arr = this.eventObj[type] || []
-        console.log(arr)
         arr.forEach(cb => {
             cb(str)
         })
