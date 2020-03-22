@@ -5069,6 +5069,11 @@ q@^1.1.2:
   version "1.5.1"
   resolved "http://r.cnpmjs.org/q/download/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
 
+qoa@^0.2.0:
+  version "0.2.0"
+  resolved "http://r.cnpmjs.org/qoa/download/qoa-0.2.0.tgz#2e4ea56a388982da570bf2025733b72e2f857aab"
+  integrity sha1-Lk6lajiJgtpXC/ICVzO3Li+Feqs=
+
 qs@6.5.1, qs@~6.5.1:
   version "6.5.1"
   resolved "http://r.cnpmjs.org/qs/download/qs-6.5.1.tgz#349cdf6eef89ec45c12d7d5eb3fc0c870343a6d8"

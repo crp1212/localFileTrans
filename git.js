@@ -4,6 +4,8 @@
 
 */
 const git = require('simple-git/promise')
+const qoa = require('qoa')
+let authorName = 'crp'
 let simpleGit = git(`D:/test/test_vscode_debug/git2/localFileTrans`)
 async function initSimpleGit () {
   // simpleGit = git(`D:/test/test_vscode_debug/git2/localFileTrans`)
@@ -17,6 +19,7 @@ async function initSimpleGit () {
     await rebaseDevelop() // rebase文件
     // 成功后pop 出stash的文件
     needStash && await popStash()
+
 
   } catch (error) {
     console.log(error)
@@ -45,7 +48,25 @@ async function stashFiles () {
 async function popStash () {
     await simpleGit.stash(['pop'])
 }
-initSimpleGit()
+async function addAllFile () {
+    await simpleGit.add(['-A'])
+}
+async function commitFile () { // 提交数据文件
+    let {message} = await qoa.input({
+        query: '请输入commit信息',
+        handle: 'message'
+    })
+    await simpleGit.commit(message)
+}
+async function commitAllFile () {
+    await addAllFile()
+    commitFile()
+}
+async function getLogMessage () {
+    let data = await simpleGit.log(['--author', 'crp'])
+    data.all.slice(0, 2).map(item => `time: ${item.date} => message: ${item.message}`).forEach(value => console.log(value))
+}
+// initSimpleGit()
 // popStash()
 // getStatus()
 // fetchDevelop()
@@ -53,3 +74,5 @@ initSimpleGit()
 // fetchDevelop()
 
 // simpleGit.branch().then(value => console.log(value))
+getLogMessage()
+commitAllFile()

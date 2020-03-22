@@ -15,6 +15,7 @@
   },
   "homepage": "./",
   "devDependencies": {
+    "qoa": "^0.2.0",
     "simple-git": "^1.132.0"
   }
 }
