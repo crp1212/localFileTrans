@@ -1755,6 +1755,13 @@ debug@^3.0.1, debug@^3.1.0:
   dependencies:
     ms "2.0.0"
 
+debug@^4.0.1:
+  version "4.1.1"
+  resolved "http://r.cnpmjs.org/debug/download/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
+  integrity sha1-O3ImAlUQnGtYnO4FDx1RYTlmR5E=
+  dependencies:
+    ms "^2.1.1"
+
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "http://r.cnpmjs.org/decamelize/download/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
@@ -3697,6 +3704,11 @@ js-tokens@^3.0.0, js-tokens@^3.0.2:
   version "3.0.2"
   resolved "http://r.cnpmjs.org/js-tokens/download/js-tokens-3.0.2.tgz#9866df395102130e38f7f996bceb65443209c25b"
 
+"js-tokens@^3.0.0 || ^4.0.0":
+  version "4.0.0"
+  resolved "http://r.cnpmjs.org/js-tokens/download/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
+  integrity sha1-GSA/tZmR35jjoocFDUZHzerzJJk=
+
 js-yaml@^3.4.3, js-yaml@^3.7.0, js-yaml@^3.9.1:
   version "3.10.0"
   resolved "http://r.cnpmjs.org/js-yaml/download/js-yaml-3.10.0.tgz#2e78441646bd4682e963f22b6e92823c309c62dc"
@@ -3974,6 +3986,13 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1:
   dependencies:
     js-tokens "^3.0.0"
 
+loose-envify@^1.4.0:
+  version "1.4.0"
+  resolved "http://r.cnpmjs.org/loose-envify/download/loose-envify-1.4.0.tgz#71ee51fa7be4caec1a63839f7e682d8132d30caf"
+  integrity sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8=
+  dependencies:
+    js-tokens "^3.0.0 || ^4.0.0"
+
 loud-rejection@^1.0.0:
   version "1.6.0"
   resolved "http://r.cnpmjs.org/loud-rejection/download/loud-rejection-1.6.0.tgz#5b46f80147edee578870f086d04821cf998e551f"
@@ -4163,6 +4182,11 @@ mkdirp@0.5.1, mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.0, mkdirp@^0.5.1, mkdi
 ms@2.0.0:
   version "2.0.0"
   resolved "http://r.cnpmjs.org/ms/download/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
+
+ms@^2.1.1:
+  version "2.1.2"
+  resolved "http://r.cnpmjs.org/ms/download/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
+  integrity sha1-0J0fNXtEP0kzgqjrPM0YOHKuYAk=
 
 multicast-dns-service-types@^1.1.0:
   version "1.1.0"
@@ -4991,13 +5015,22 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.10, prop-types@^15.6.0:
+prop-types@^15.5.10:
   version "15.6.0"
   resolved "http://r.cnpmjs.org/prop-types/download/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.3.1"
     object-assign "^4.1.1"
+
+prop-types@^15.6.2:
+  version "15.7.2"
+  resolved "http://r.cnpmjs.org/prop-types/download/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
+  dependencies:
+    loose-envify "^1.4.0"
+    object-assign "^4.1.1"
+    react-is "^16.8.1"
 
 proxy-addr@~2.0.2:
   version "2.0.2"
@@ -5138,18 +5171,24 @@ react-dev-utils@^5.0.0:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@16.2.0:
-  version "16.2.0"
-  resolved "http://r.cnpmjs.org/react-dom/download/react-dom-16.2.0.tgz#69003178601c0ca19b709b33a83369fe6124c044"
+react-dom@^16.2.0:
+  version "16.13.1"
+  resolved "http://r.cnpmjs.org/react-dom/download/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
+  integrity sha1-wb03MxoEhsB47lTEdAcgmTsuDn8=
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
+    scheduler "^0.19.1"
 
 react-error-overlay@^4.0.0:
   version "4.0.0"
   resolved "http://r.cnpmjs.org/react-error-overlay/download/react-error-overlay-4.0.0.tgz#d198408a85b4070937a98667f500c832f86bd5d4"
+
+react-is@^16.8.1:
+  version "16.13.1"
+  resolved "http://r.cnpmjs.org/react-is/download/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
+  integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
 
 react-scripts@1.1.0:
   version "1.1.0"
@@ -5195,14 +5234,14 @@ react-scripts@1.1.0:
   optionalDependencies:
     fsevents "1.1.2"
 
-react@16.2.0:
-  version "16.2.0"
-  resolved "http://r.cnpmjs.org/react/download/react-16.2.0.tgz#a31bd2dab89bff65d42134fa187f24d054c273ba"
+react@^16.2.0:
+  version "16.13.1"
+  resolved "http://r.cnpmjs.org/react/download/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
+  integrity sha1-LoGIIvGpdDEiwGPWQQ2FweOv5I4=
   dependencies:
-    fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    prop-types "^15.6.0"
+    prop-types "^15.6.2"
 
 read-all-stream@^3.0.0:
   version "3.1.0"
@@ -5561,6 +5600,14 @@ sax@^1.2.1, sax@~1.2.1:
   version "1.2.4"
   resolved "http://r.cnpmjs.org/sax/download/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
+scheduler@^0.19.1:
+  version "0.19.1"
+  resolved "http://r.cnpmjs.org/scheduler/download/scheduler-0.19.1.tgz#4f3e2ed2c1a7d65681f4c854fa8c5a1ccb40f196"
+  integrity sha1-Tz4u0sGn1laB9MhU+oxaHMtA8ZY=
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
 schema-utils@^0.3.0:
   version "0.3.0"
   resolved "http://r.cnpmjs.org/schema-utils/download/schema-utils-0.3.0.tgz#f5877222ce3e931edae039f17eb3716e7137f8cf"
@@ -5683,6 +5730,13 @@ shellwords@^0.1.1:
 signal-exit@^3.0.0, signal-exit@^3.0.2:
   version "3.0.2"
   resolved "http://r.cnpmjs.org/signal-exit/download/signal-exit-3.0.2.tgz#b5fdc08f1287ea1178628e415e25132b73646c6d"
+
+simple-git@^1.132.0:
+  version "1.132.0"
+  resolved "http://r.cnpmjs.org/simple-git/download/simple-git-1.132.0.tgz#53ac4c5ec9e74e37c2fd461e23309f22fcdf09b1"
+  integrity sha1-U6xMXsnnTjfC/UYeIzCfIvzfCbE=
+  dependencies:
+    debug "^4.0.1"
 
 slash@^1.0.0:
   version "1.0.0"
