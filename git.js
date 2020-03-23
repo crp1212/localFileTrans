@@ -66,6 +66,11 @@ async function getLogMessage () {
     let data = await simpleGit.log(['--author', 'crp'])
     data.all.slice(0, 2).map(item => `time: ${item.date} => message: ${item.message}`).forEach(value => console.log(value))
 }
+async function pushCommit () {
+    await simpleGit.push('origin/master')
+    await fetchDevelop()
+    simpleGit.branch().then(value => console.log(value))
+}
 // initSimpleGit()
 // popStash()
 // getStatus()
@@ -73,6 +78,7 @@ async function getLogMessage () {
 // rebaseDevelop()
 // fetchDevelop()
 
-// simpleGit.branch().then(value => console.log(value))
-getLogMessage()
-commitAllFile()
+simpleGit.branch().then(value => console.log(value))
+// getLogMessage()
+// commitAllFile()
+// pushCommit()
